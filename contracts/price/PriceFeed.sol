@@ -8,6 +8,11 @@ contract PriceFeed is Ownable {
 
     AggregatorV3Interface internal priceFeed;
 
+    /**
+     * Network: Polygon
+     * Aggregator: MATIC/USD
+     * Address: 0xAB594600376Ec9fD91F8e885dADF0CE036862dE0 
+     */
     constructor(address feed) {
         setPriceAddress(feed);
     }
